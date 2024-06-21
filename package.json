@@ -1,0 +1,23 @@
+{
+  "name": "hotel",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "swiper": "^11.1.3",
+    "vue": "^3.4.21",
+    "vue-datepicker-ui": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.0"
+  },
+  "tags": [
+    "swiper"
+  ]
+}
