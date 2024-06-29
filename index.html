@@ -7,7 +7,9 @@
   <title>Отель "Вачиан" в Витязево</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,39 +18,69 @@
 </head>
 
 <body>
-  <header class="header">
+  <div class="nav_burger_wrapper">
+    <div class="nav_burger">
+      <a href="#about">Об отеле</a>
+      <a href="#hotel_gallery">Галерея</a>
+      <a href="#rooms">Номера</a>
+      <a href="#services">Услуги</a>
+      <a href="#spo">Акции</a>
+      <a href="#location">Расположение</a>
+      <a href="#reviews">Отзывы</a>
+    </div>
+    <div>
+      <img class="closeicon" src="public/images/close.svg" alt="">
+    </div>
+  </div>
+  <header class="header_under1200">
+    <div class="contacts">
+      <a href="tel:+79183880505">8 (918) 388-05-05</a>
+      <a href=""><img src="/public/images/telegram.svg" alt=""></a>
+      <a href=""><img src="/public/images/whatsapp.svg" alt=""></a>
+      <a href=""><img src="/public/images/vk.svg" alt=""></a>
+    </div>
+    <a href="#application">
+      <button class="book_btn">Забронировать</button>
+    </a>
+    <img class="burger_icon" src="public/images/menu-duo-lg-svgrepo-com.svg" alt="">
+    </div>
+  </header>
+  <header class="header animate__animated animate__fadeIn animate__slow">
     <div class="navigation">
-      <a href="">Об отеле</a>
-      <a href="">Галерея</a>
-      <a href="">Номера</a>
-      <a href="">Услуги</a>
-      <a href="">Акции</a>
-      <a href="">Расположение</a>
-      <a href="">Отзывы</a>
+      <a href="#about">Об отеле</a>
+      <a href="#hotel_gallery">Галерея</a>
+      <a href="#rooms">Номера</a>
+      <a href="#services">Услуги</a>
+      <a href="#spo">Акции</a>
+      <a href="#location">Расположение</a>
+      <a href="#reviews">Отзывы</a>
     </div>
     <div class="contacts">
       <a href="tel:+79183880505">8 (918) 388-05-05</a>
-      <a href=""><img src="/telegram.svg" alt=""></a>
-      <a href=""><img src="/whatsapp.svg" alt=""></a>
+      <a href=""><img src="/public/images/telegram.svg" alt=""></a>
+      <a href=""><img src="/public/images/whatsapp.svg" alt=""></a>
+      <a href=""><img src="/public/images/vk.svg" alt=""></a>
     </div>
-    <button class="book_btn">Забронировать</button>
+    <a href="#application">
+      <button class="book_btn">Забронировать</button>
+    </a>
   </header>
-  <section class="hero">
+  <section id="hero">
     <div class="image_filter"></div>
-    <div class="hero_content_wrapper">
-      <h1>Отель «Вачиан» в Витязево</h1>
+    <div class="hero_content_wrapper ">
+      <h1 class="animate__animated animate__fadeIn animate__slow">Отель «Вачиан» в Витязево</h1>
       <div class="cards_info">
-        <div class="card_info_wrapper">
+        <div class="card_info_wrapper animate__animated animate__fadeIn animate__slow">
           <div class="card_info_header">
-            <img src="/calendar.svg" alt="">
+            <img src="/public/images/calendar.svg" alt="">
             <h4 class="padding_left_10">Круглогодично</h4>
           </div>
           <p class="card_description">Номера в нашем отеле отапливаются в осенне-зимний период, поэтому мы ждем гостей
             круглый год!</p>
         </div>
-        <div class="card_info_wrapper">
+        <div class="card_info_wrapper animate__animated animate__fadeIn animate__slow">
           <div class="card_info_header">
-            <img src="/kid.svg" alt="">
+            <img src="/public/images/kid.svg" alt="">
             <h4 class="padding_left_10">Рекомендовано детям</h4>
           </div>
           <p class="card_description">В отеле есть детская площадка, кухня для самостоятельного приготовления пищи, -
@@ -59,7 +91,7 @@
     </div>
     </div>
   </section>
-  <section class="about">
+  <section id="about">
     <div class="content_wrapper">
       <h2>Отель «Вачиан» - описание</h2>
       <p class="padding_bottom_20">Гостевой дом "Вачиан" расположен в поселке Витязево в 1000 метрах от моря и песчаного
@@ -74,45 +106,45 @@
     </div>
 
   </section>
-  <section class="about">
+  <section id="hotel_gallery">
     <div class="content_wrapper">
       <h2>Фотографии отеля</h2>
       <div class="gallery_wrapper">
-        <a class="img_left" data-fslightbox="gallery" href="/2.jpeg">
-          <img src="/2.jpeg" alt="Image">
+        <a class="img_left" data-fslightbox="gallery" href="/public/images/2.jpeg">
+          <img src="/public/images/2.jpeg" alt="Image">
         </a>
         <div class="img_right_wrapper">
           <div class="images_up">
-            <a class="img_right_1" data-fslightbox="gallery" href="/1.jpeg">
-              <img src="/1.jpeg" alt="Image">
+            <a class="img_right_1" data-fslightbox="gallery" href="/public/images/1.jpeg">
+              <img src="/public/images/1.jpeg" alt="Image">
             </a>
-            <a class="img_right_2" data-fslightbox="gallery" href="/3.jpeg">
-              <img src="/3.jpeg" alt="Image">
+            <a class="img_right_2" data-fslightbox="gallery" href="/public/images/3.jpeg">
+              <img src="/public/images/3.jpeg" alt="Image">
             </a>
           </div>
           <div class="images_down">
-            <a class="img_right_3" data-fslightbox="gallery" href="/4.jpeg">
-              <img src="/4.jpeg" alt="Image">
+            <a class="img_right_3" data-fslightbox="gallery" href="/public/images/4.jpeg">
+              <img src="/public/images/4.jpeg" alt="Image">
             </a>
-            <a class="img_right_4" data-fslightbox="gallery" href="/5.jpeg">
-              <img src="/5.jpeg" alt="Image">
+            <a class="img_right_4" data-fslightbox="gallery" href="/public/images/5.jpeg">
+              <img src="/public/images/5.jpeg" alt="Image">
             </a>
           </div>
         </div>
       </div>
       <div class="gallery_hidden">
-        <a data-fslightbox="gallery" href="/6.jpeg">
-          <img src="/6.jpeg" alt="Image">
+        <a data-fslightbox="gallery" href="/public/images/6.jpeg">
+          <img src="/public/images/6.jpeg" alt="Image">
         </a>
-        <a data-fslightbox="gallery" href="/7.jpeg">
-          <img src="/7.jpeg" alt="Image">
+        <a data-fslightbox="gallery" href="/public/images/7.jpeg">
+          <img src="/public/images/7.jpeg" alt="Image">
         </a>
-        <a data-fslightbox="gallery" href="/8.jpeg">
-          <img src="/8.jpeg" alt="Image">
+        <a data-fslightbox="gallery" href="/public/images/8.jpeg">
+          <img src="/public/images/8.jpeg" alt="Image">
         </a>
       </div>
   </section>
-  <section class="food">
+  <section id="food">
     <div class="content_wrapper">
       <div class="food_wrapper">
         <div class="food_img"></div>
@@ -126,314 +158,323 @@
       </div>
     </div>
   </section>
-  <section class="room">
-    <div class="content_wrapper">
+  <section id="rooms">
+    <div class="content_wrapper pb_130px">
       <h2>Номерной фонд отеля</h2>
       <div class="room_item">
-        <div class="room_wrapper">
-          <div class="room_gallery">
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/2.jpeg" />
+        <div class="room_item_wrapper">
+          <div class="room_wrapper">
+            <div class="room_gallery">
+              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/public/images/2.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/7.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_balcony.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_wardrobe.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_cauch.jpeg" />
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="/7.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_balcony.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_wardrobe.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_cauch.jpeg" />
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/public/images/2.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/7.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_balcony.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_wardrobe.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_cauch.jpeg" />
+                  </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
 
-            <div thumbsSlider="" class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/2.jpeg" />
+            <div class="room_text_wrapper">
+              <h3>2-3-х местные номера "Комфорт"</h3>
+              <div class="room_info">
+                <h4 class="padding_bottom_20">Описание</h4>
+                <div class="room_info_text">
+                  <p class="dark_grey">В номерах двуспальная и односпальная кровати или двуспальная кровать и
+                    кресло-кровать, прикроватные тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
+                    столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
+                    холодильник,
+                    сплит-система.
+                    В номерах двуспальная и односпальная кровати или двуспальная кровать и кресло-кровать, прикроватные
+                    тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
+                    столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
+                    холодильник,
+                    сплит-система.
+                  </p>
+                  <button class="btn_show hidden">Показать полностью</button>
                 </div>
-                <div class="swiper-slide">
-                  <img src="/7.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_balcony.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_wardrobe.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_cauch.jpeg" />
-                </div>
+
               </div>
-            </div>
-          </div>
-
-          <div class="room_text_wrapper">
-            <h3>2-3-х местные номера "Комфорт"</h3>
-            <div class="room_info">
-              <h4 class="padding_bottom_20">Описание</h4>
-              <div class="room_info_text">
-                <p class="dark_grey">В номерах двуспальная и односпальная кровати или двуспальная кровать и
-                  кресло-кровать, прикроватные тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
-                  столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
-                  холодильник,
-                  сплит-система.
-                  В номерах двуспальная и односпальная кровати или двуспальная кровать и кресло-кровать, прикроватные
-                  тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
-                  столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
-                  холодильник,
-                  сплит-система.
+              <div class="toilet">
+                <h4 class="padding_bottom_20">Санузел:&nbsp;</h4>
+                <p class="dark_grey padding_bottom_20">
+                  совмещенный в номере
                 </p>
-                <button class="btn_show hidden">Показать полностью</button>
               </div>
-              
+              <div class="beds_wrapper">
+                <div class="bed_item">
+                  <p class=" dark_grey">1</p>
+                  <img class="padding_left_4" src="/public/images/close.svg" alt="">
+                  <img class="padding_left_4" src="/public/images/double_bed.svg" alt="">
+                  <p class="dark_grey padding_left_10">Большая двуспальная</p>
+                </div>
+                <div class="bed_item">
+                  <p class=" dark_grey">1</p>
+                  <img class="padding_left_4" src="/public/images/close.svg" alt="">
+                  <img class="padding_left_4" src="/public/images/single_bed.svg" alt="">
+                  <p class="dark_grey padding_left_10">Односпальная кровать</p>
+                </div>
+              </div>
+              <div class="facilities_wrapper">
+                <div class="facility_item">
+                  <img src="/public/images/radiator.svg" alt="">
+                  <p class="dark_grey padding_left_4">Отопление</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/towels.svg" alt="">
+                  <p class="dark_grey padding_left_4">Полотенца</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/television.svg" alt="">
+                  <p class="dark_grey padding_left_4">ТВ</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/sea-waves.svg" alt="">
+                  <p class="dark_grey padding_left_4">Вид на море</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/fridge.svg" alt="">
+                  <p class="dark_grey padding_left_4">Холодильник</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/air_conditioner.svg" alt="">
+                  <p class="dark_grey padding_left_4">Кондиционер</p>
+                </div>
+              </div>
+              <a href="v-booking">
+                <button class="calculate_btn">Рассчитать стоимость</button>
+              </a>
             </div>
-            <div class="toilet">
-              <h4 class="padding_bottom_20">Санузел:&nbsp;</h4>
-              <p class="dark_grey padding_bottom_20">
-                совмещенный в номере
-              </p>
-            </div>
-            <div class="beds_wrapper">
-              <div class="bed_item">
-                <p class=" dark_grey">1</p>
-                <img class="padding_left_4" src="/close.svg" alt="">
-                <img class="padding_left_4" src="/double_bed.svg" alt="">
-                <p class="dark_grey padding_left_10">Большая двуспальная</p>
-              </div>
-              <div class="bed_item">
-                <p class=" dark_grey">1</p>
-                <img class="padding_left_4" src="/close.svg" alt="">
-                <img class="padding_left_4" src="/single_bed.svg" alt="">
-                <p class="dark_grey padding_left_10">Односпальная кровать</p>
-              </div>
-            </div>
-            <div class="facilities_wrapper">
-              <div class="facility_item">
-                <img src="/radiator.svg" alt="">
-                <p class="dark_grey padding_left_4">Отопление</p>
-              </div>
-              <div class="facility_item">
-                <img src="towels.svg" alt="">
-                <p class="dark_grey padding_left_4">Полотенца</p>
-              </div>
-              <div class="facility_item">
-                <img src="/television.svg" alt="">
-                <p class="dark_grey padding_left_4">ТВ</p>
-              </div>
-              <div class="facility_item">
-                <img src="public/sea-waves.svg" alt="">
-                <p class="dark_grey padding_left_4">Вид на море</p>
-              </div>
-              <div class="facility_item">
-                <img src="/fridge.svg" alt="">
-                <p class="dark_grey padding_left_4">Холодильник</p>
-              </div>
-              <div class="facility_item">
-                <img src="/air_conditioner.svg" alt="">
-                <p class="dark_grey padding_left_4">Кондиционер</p>
-              </div>
-            </div>
-            <button class="calculate_btn">Рассчитать стоимость</button>
+          </div>
+          <div class="table_wrapper">
+            <table class="table_prices">
+              <tr class="table_header">
+                <th>Категории/Периоды</th>
+                <th>01.05-31.05</th>
+                <th>01.06-15.06</th>
+                <th>16.06-30.06</th>
+                <th>01.07-31.07</th>
+                <th>01.08-25.08</th>
+                <th>26.08-01.10</th>
+              </tr>
+              <tr class="table_row">
+                <td>2-3-х местные номера "Комфорт"</td>
+                <td>1400</td>
+                <td>1800</td>
+                <td>2300</td>
+                <td>2600</td>
+                <td>2300</td>
+                <td>1700</td>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="table_wrapper">
-          <table class="table_prices">
-            <tr class="table_header">
-              <th>Категории/Периоды</th>
-              <th>01.05-31.05</th>
-              <th>01.06-15.06</th>
-              <th>16.06-30.06</th>
-              <th>01.07-31.07</th>
-              <th>01.08-25.08</th>
-              <th>26.08-01.10</th>
-            </tr>
-            <tr class="table_row">
-              <td>2-3-х местные номера "Комфорт"</td>
-              <td>1400</td>
-              <td>1800</td>
-              <td>2300</td>
-              <td>2600</td>
-              <td>2300</td>
-              <td>1700</td>
-            </tr>
-          </table>
-        </div>
-
       </div>
       <div class="room_item">
-        <div class="room_wrapper">
-          <div class="room_gallery">
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/2.jpeg" />
+        <div class="room_item_wrapper">
+          <div class="room_wrapper">
+            <div class="room_gallery">
+              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/public/images/2.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/7.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_balcony.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_wardrobe.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_cauch.jpeg" />
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="/7.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_balcony.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_wardrobe.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_cauch.jpeg" />
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/public/images/2.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/7.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_balcony.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_wardrobe.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/public/images/room_cauch.jpeg" />
+                  </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
+            <div class="room_text_wrapper">
+              <h3>2-х комнатный 6-ти местный номер "С удобствами"</h3>
+              <div class="room_info">
+                <h4 class="padding_bottom_20">Описание</h4>
+                <div class="room_info_text">
+                  <p class="dark_grey">В гостиной диван-кровать, кресло-кровать, журнальный столик, пуфики, барный стол,
+                    стулья, шкаф с зеркалом, трюмо с зеркалом, кухонная гарнитура, обеденная зона, телевизор,
+                    холодильник,
+                    сплит-система, газовая плита, эл. чайник, посуда для готовки. В комнате: двуспальная и односпальная
+                    кровати, прикроватные тумбочки, кресло, шкаф с зеркалом, телевизор, сплит-система.
+                    В номерах двуспальная и односпальная кровати или двуспальная кровать и
+                    кресло-кровать, прикроватные тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
+                    столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
+                    холодильник,
+                    сплит-система.
+                    В номерах двуспальная и односпальная кровати или двуспальная кровать и кресло-кровать, прикроватные
+                    тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
+                    столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
+                    холодильник,
+                    сплит-система.
+                  </p>
+                  <button class="btn_show hidden">Показать полностью</button>
+                </div>
 
-            <div thumbsSlider="" class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/2.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/7.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_balcony.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_wardrobe.jpeg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/room_cauch.jpeg" />
-                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="room_text_wrapper">
-            <h3>2-х комнатный 6-ти местный номер "С удобствами"</h3>
-            <div class="room_info">
-              <h4 class="padding_bottom_20">Описание</h4>
-              <div class="room_info_text">
-                <p class="dark_grey">В гостиной диван-кровать, кресло-кровать, журнальный столик, пуфики, барный стол,
-                  стулья, шкаф с зеркалом, трюмо с зеркалом, кухонная гарнитура, обеденная зона, телевизор, холодильник,
-                  сплит-система, газовая плита, эл. чайник, посуда для готовки. В комнате: двуспальная и односпальная
-                  кровати, прикроватные тумбочки, кресло, шкаф с зеркалом, телевизор, сплит-система.
-                  В номерах двуспальная и односпальная кровати или двуспальная кровать и
-                  кресло-кровать, прикроватные тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
-                  столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
-                  холодильник,
-                  сплит-система.
-                  В номерах двуспальная и односпальная кровати или двуспальная кровать и кресло-кровать, прикроватные
-                  тумбочки, ортопедический матрас СИТИ, шифоньер с зеркалом, трельяжный
-                  столик с зеркалом, пуфик. Из удобств: телевизор с интернетом, спутниковое ТВ с 20 каналами,
-                  холодильник,
-                  сплит-система.
+              <div class="toilet">
+                <h4 class="padding_bottom_20">Санузел:&nbsp;</h4>
+                <p class="dark_grey padding_bottom_20">
+                  совмещенный в номере
                 </p>
-                <button class="btn_show hidden">Показать полностью</button>
               </div>
+              <div class="beds_wrapper">
+                <div class="bed_item">
+                  <p class=" dark_grey">1</p>
+                  <img class="padding_left_4" src="/public/images/close.svg" alt="">
+                  <img class="padding_left_4" src="/public/images/double_bed.svg" alt="">
+                  <p class="dark_grey padding_left_10">Большая двуспальная</p>
+                </div>
+                <div class="bed_item">
+                  <p class=" dark_grey">1</p>
+                  <img class="padding_left_4" src="/public/images/close.svg" alt="">
+                  <img class="padding_left_4" src="/public/images/single_bed.svg" alt="">
+                  <p class="dark_grey padding_left_10">Односпальная кровать</p>
+                </div>
+                <div class="bed_item">
+                  <p class=" dark_grey">1</p>
+                  <img class="padding_left_4" src="/public/images/close.svg" alt="">
+                  <img class="padding_left_4" src="/public/images/single_bed.svg" alt="">
+                  <p class="dark_grey padding_left_10">Кресло-кровать</p>
+                </div>
+                <div class="bed_item">
+                  <p class=" dark_grey">1</p>
+                  <img class="padding_left_4" src="/public/images/close.svg" alt="">
+                  <img class="padding_left_4" src="/public/images/single_bed.svg" alt="">
+                  <p class="dark_grey padding_left_10">2-х местн. диван-кровать</p>
+                </div>
+              </div>
+              <div class="facilities_wrapper">
+                <div class="facility_item">
+                  <img src="/public/images/radiator.svg" alt="">
+                  <p class="dark_grey padding_left_4">Отопление</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/towels.svg" alt="">
+                  <p class="dark_grey padding_left_4">Полотенца</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/television.svg" alt="">
+                  <p class="dark_grey padding_left_4">ТВ</p>
+                </div>
+                <div class="facility_item">
+                  <img src="images/sea-waves.svg" alt="">
+                  <p class="dark_grey padding_left_4">Вид на море</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/fridge.svg" alt="">
+                  <p class="dark_grey padding_left_4">Холодильник</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/air_conditioner.svg" alt="">
+                  <p class="dark_grey padding_left_4">Кондиционер</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/kitchen.svg" alt="">
+                  <p class="dark_grey padding_left_4">Кухня</p>
+                </div>
+                <div class="facility_item">
+                  <img src="/public/images/balcony.svg" alt="">
+                  <p class="dark_grey padding_left_4">Балкон</p>
+                </div>
+              </div>
+              <a href="v-booking">
+                <button class="calculate_btn">Рассчитать стоимость</button>
+              </a>
 
             </div>
-            <div class="toilet">
-              <h4 class="padding_bottom_20">Санузел:&nbsp;</h4>
-              <p class="dark_grey padding_bottom_20">
-                совмещенный в номере
-              </p>
-            </div>
-            <div class="beds_wrapper">
-              <div class="bed_item">
-                <p class=" dark_grey">1</p>
-                <img class="padding_left_4" src="/close.svg" alt="">
-                <img class="padding_left_4" src="/double_bed.svg" alt="">
-                <p class="dark_grey padding_left_10">Большая двуспальная</p>
-              </div>
-              <div class="bed_item">
-                <p class=" dark_grey">1</p>
-                <img class="padding_left_4" src="/close.svg" alt="">
-                <img class="padding_left_4" src="/single_bed.svg" alt="">
-                <p class="dark_grey padding_left_10">Односпальная кровать</p>
-              </div>
-              <div class="bed_item">
-                <p class=" dark_grey">1</p>
-                <img class="padding_left_4" src="/close.svg" alt="">
-                <img class="padding_left_4" src="/single_bed.svg" alt="">
-                <p class="dark_grey padding_left_10">Кресло-кровать</p>
-              </div>
-              <div class="bed_item">
-                <p class=" dark_grey">1</p>
-                <img class="padding_left_4" src="/close.svg" alt="">
-                <img class="padding_left_4" src="/single_bed.svg" alt="">
-                <p class="dark_grey padding_left_10">2-х местн. диван-кровать</p>
-              </div>
-            </div>
-            <div class="facilities_wrapper">
-              <div class="facility_item">
-                <img src="/radiator.svg" alt="">
-                <p class="dark_grey padding_left_4">Отопление</p>
-              </div>
-              <div class="facility_item">
-                <img src="towels.svg" alt="">
-                <p class="dark_grey padding_left_4">Полотенца</p>
-              </div>
-              <div class="facility_item">
-                <img src="/television.svg" alt="">
-                <p class="dark_grey padding_left_4">ТВ</p>
-              </div>
-              <div class="facility_item">
-                <img src="public/sea-waves.svg" alt="">
-                <p class="dark_grey padding_left_4">Вид на море</p>
-              </div>
-              <div class="facility_item">
-                <img src="/fridge.svg" alt="">
-                <p class="dark_grey padding_left_4">Холодильник</p>
-              </div>
-              <div class="facility_item">
-                <img src="/air_conditioner.svg" alt="">
-                <p class="dark_grey padding_left_4">Кондиционер</p>
-              </div>
-              <div class="facility_item">
-                <img src="/kitchen.svg" alt="">
-                <p class="dark_grey padding_left_4">Кухня</p>
-              </div>
-              <div class="facility_item">
-                <img src="/balcony.svg" alt="">
-                <p class="dark_grey padding_left_4">Балкон</p>
-              </div>
-            </div>
-            <button class="calculate_btn">Рассчитать стоимость</button>
+          </div>
+          <div class="table_wrapper">
+            <table class="table_prices">
+              <tr class="table_header">
+                <th>Категории/Периоды</th>
+                <th>01.05-31.05</th>
+                <th>01.06-15.06</th>
+                <th>16.06-30.06</th>
+                <th>01.07-31.07</th>
+                <th>01.08-25.08</th>
+                <th>26.08-01.10</th>
+              </tr>
+              <tr class="table_row">
+                <td>2-х комнатный 6-ти местный номер "С удобствами"</td>
+                <td>2700</td>
+                <td>3200</td>
+                <td>4500</td>
+                <td>6000</td>
+                <td>6000</td>
+                <td>4000</td>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="table_wrapper">
-          <table class="table_prices">
-            <tr class="table_header">
-              <th>Категории/Периоды</th>
-              <th>01.05-31.05</th>
-              <th>01.06-15.06</th>
-              <th>16.06-30.06</th>
-              <th>01.07-31.07</th>
-              <th>01.08-25.08</th>
-              <th>26.08-01.10</th>
-            </tr>
-            <tr class="table_row">
-              <td>2-х комнатный 6-ти местный номер "С удобствами"</td>
-              <td>2700</td>
-              <td>3200</td>
-              <td>4500</td>
-              <td>6000</td>
-              <td>6000</td>
-              <td>4000</td>
-            </tr>
-          </table>
-        </div>
+
       </div>
     </div>
   </section>
   <section class="prices">
-    <div class="content_wrapper table_all_prices">
+    <div class="content_wrapper ">
       <h2>Стоимость проживания <br> (за номер в сутки на 2024 год)</h2>
       <div class="table_wrapper all_prices">
         <table class="table_prices">
@@ -469,9 +510,9 @@
       <p class="coution">Окончательную стоимость уточнять при бронировании номера!</p>
     </div>
   </section>
-  <section class="services">
-    <img class="top_bg_img" src="public/Clusiacae.svg" alt="">
-    <img class="bottom_bg_img" src="public/orange.svg" alt="">
+  <section id="services">
+    <img class="top_bg_img" src="images/Clusiacae.svg" alt="">
+    <img class="bottom_bg_img" src="images/orange.svg" alt="">
     <div class="content_wrapper">
       <h2>Услуги отеля</h2>
       <div class="services_wrapper">
@@ -479,47 +520,47 @@
           <h4 class="dark_grey service_item_header">Услуги, входящие в стоимость</h4>
           <div class="services_list">
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Большой бассейн с подогревом;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Терраса со столиками и телевизором.</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Утюг и гладильная доска;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Высокоскоростной Wi-Fi на территории;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Вид с окон номеров;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Кухня для готовки;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Во дворе игровая площадка;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Во дворе имеется автостоянка;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Гостиница работает круглогодично;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Для отдыха предоставляется мангальная зона;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-ok.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-ok.svg" alt="">
               <p class="dark_grey">Кинотеатр для гостей нашего гостевого дома</p>
             </div>
           </div>
@@ -528,15 +569,15 @@
           <h4 class="dark_grey service_item_header">Услуги за дополнительную плату</h4>
           <div class="services_list">
             <div class="service_item">
-              <img class="mg_right10" src="/circle-rub.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-rub.svg" alt="">
               <p class="dark_grey">Трансфер;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-rub.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-rub.svg" alt="">
               <p class="dark_grey">Кальянная;</p>
             </div>
             <div class="service_item">
-              <img class="mg_right10" src="/circle-rub.svg" alt="">
+              <img class="mg_right10" src="/public/images/circle-rub.svg" alt="">
               <p class="dark_grey">Прачечная;</p>
             </div>
           </div>
@@ -546,20 +587,20 @@
     </div>
 
   </section>
-  <section class="spo">
-    <img class="right_top_bg_img" src="/Evergreen.svg" alt="">
-    <img class="left_bg_img" src="/EvergreenBig.svg" alt="">
-    <img class="right_bottom_bg_img" src="/public/monstera.svg" alt="">
+  <section id="spo">
+    <img class="right_top_bg_img" src="/public/images/Evergreen.svg" alt="">
+    <img class="left_bg_img" src="/public/images/EvergreenBig.svg" alt="">
+    <img class="right_bottom_bg_img" src="/public/images/images/monstera.svg" alt="">
     <div class="content_wrapper">
       <h2 class="spo_header">Спецпредложения</h2>
       <p class="spo_coution">Скидки и Акции не сумируются</p>
       <div class="spo_cards_wrapper">
         <div class="spo_card">
-          <img src="/woman.jpg" alt="">
+          <img src="/public/images/woman.jpg" alt="">
           <p>Постоянным клиентам скидка 10%</p>
         </div>
         <div class="spo_card">
-          <img src="/public/hotel_SPO.svg" alt="">
+          <img src="/public/images/hotel_SPO.svg" alt="">
           <p>Скидки на свободные номера</p>
         </div>
       </div>
@@ -567,7 +608,7 @@
       </div>
     </div>
   </section>
-  <section class="location">
+  <section id="location">
     <div class="content_wrapper">
       <h2>Расположение</h2>
       <div class="location_cards_wrapper">
@@ -579,27 +620,28 @@
           </div>
           <div class="write_us">
             <p>Напишите нам</p>
-            <a class="padding_left_10"><img src="/telegram.svg" alt=""></a>
-            <a class="padding_left_10" href=""><img src="/whatsapp.svg" alt=""></a>
+            <a class="padding_left_10"><img src="/public/images/telegram.svg" alt=""></a>
+            <a class="padding_left_10" href=""><img src="/public/images/whatsapp.svg" alt=""></a>
+            <a class="padding_left_10" href=""><img src="/public/images/vk.svg" alt=""></a>
           </div>
         </div>
         <div class="places_card">
           <p>Важное рядом:</p>
           <div class="places">
             <div class="place_item">
-              <img src="/bag.svg" alt="">
+              <img src="/public/images/bag.svg" alt="">
               <p class="padding_left_10">Магазины - 1 минута;</p>
             </div>
             <div class="place_item">
-              <img src="/restaurant.svg" alt="">
+              <img src="/public/images/restaurant.svg" alt="">
               <p class="padding_left_10">Рестораны - 1 минута;</p>
             </div>
             <div class="place_item">
-              <img src="/medicine.svg" alt="">
+              <img src="/public/images/medicine.svg" alt="">
               <p class="padding_left_10">Аптека - 1 минута;</p>
             </div>
             <div class="place_item">
-              <img src="/sunset.svg" alt="">
+              <img src="/public/images/sunset.svg" alt="">
               <p class="padding_left_10">До моря - 900 местров;</p>
             </div>
           </div>
@@ -618,9 +660,13 @@
       </div>
     </div>
   </section>
-  <section class="review">
+  <section id="reviews">
     <div class="content_wrapper">
       <h2>Отзывы</h2>
+      <div class="no_reviews hidden">
+        <img src="images/ic-comments.svg" alt="">
+        <p class="mg_left10">Еще никто не оставил отзыв. Станьте первым! </p>
+      </div>
       <div class="reviews">
         <div class="review_card">
           <h4>Анастасия</h4>
@@ -676,24 +722,24 @@
   <section class="steps">
     <div class="content_wrapper steps_container">
       <h2>Как происходит бронирование через сайт kokotrip.ru</h2>
-      
+
       <div class="steps_wrapper">
         <div class="step">
-          <img class="img_step" src="/1.svg" alt="">
+          <img class="img_step" src="/public/images/1.svg" alt="">
           <div class="step_text">
             <h4 class="uppercase">Заявка</h4>
             <p class="step-describtion">Заполните заявку на бронирование по выбранным датам и отправьте ее</p>
           </div>
         </div>
         <div class="step">
-          <img class="img_step" src="/2.svg" alt="">
+          <img class="img_step" src="/public/images/2.svg" alt="">
           <div class="step_text">
             <h4 class="uppercase">Согласование</h4>
             <p class="step-describtion">Администратор должен связаться для согласования даты, категории и стоимости</p>
           </div>
         </div>
         <div class="step">
-          <img class="img_step" src="/3.svg" alt="">
+          <img class="img_step" src="/public/images/3.svg" alt="">
           <div class="step_text">
             <h4 class="uppercase">Бронирование</h4>
             <p class="step-describtion">После согласования вам будет выставлен счет для гарантированного бронирования
@@ -701,7 +747,7 @@
           </div>
         </div>
         <div class="step">
-          <img class="img_step" src="/4.svg" alt="">
+          <img class="img_step" src="/public/images/4.svg" alt="">
           <div class="step_text">
             <h4 class="uppercase">Оплата</h4>
             <p class="step-describtion">Необходимо внести предоплату, которую потребует администратор, остаток оплатите
@@ -709,7 +755,7 @@
           </div>
         </div>
         <div class="step">
-          <img class="img_step" src="/5.svg" alt="">
+          <img class="img_step" src="/public/images/5.svg" alt="">
           <div class="step_text">
             <h4 class="uppercase">Заезд</h4>
             <p class="step-describtion">Перед заездом нужно показать чек об оплате предоплаты, после чего оплатить
@@ -718,12 +764,12 @@
         </div>
         <div class="connection-line"></div>
       </div>
-      
+
     </div>
   </section>
-  <section class="application">
+  <section id="application">
     <div class="application_form_wrapper">
-      <img src="public/girl.png" alt="">
+      <img src="images/girl.png" alt="">
       <div class="form_application_wrapper">
         <h2>Заявка</h2>
         <p class="form_subheader">Остались вопросы? Хотите узнать о наличии свободных апартаментов и их стоимость?
@@ -744,7 +790,7 @@
     <div class="footer_info_wrapper">
       <div class="legal_info">
         <div class="logo">
-          <img src="public/koko_logo2 1.svg" alt="">
+          <img src="images/koko_logo2 1.svg" alt="">
           <p class="mg_left10 uppercase footer_header">KokoTrip.ru</p>
         </div>
         <p>

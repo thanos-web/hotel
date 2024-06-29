@@ -8,14 +8,12 @@ import Booking from "../src/components/booking.vue"
 // BOOKING
 
 document.addEventListener("DOMContentLoaded", () => {
-  const node_booking = document.getElementById("v-booking") 
+  const node_booking = document.getElementById("v-booking")
   if (node_booking) {
     createApp(Booking).mount(node_booking)
 
   }
-} ) 
-
-
+})
 
 // SWIPER
 
@@ -87,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const lineCount = Math.ceil(textHolder.scrollHeight / lineHeight); // Делим полную высоту на высоту строки для подсчёта их числа 
 
     if (lineCount > 3) {
-      console.log("hui pizda")
       btn_show.classList.remove("hidden")
     }
     else { console.log(lineCount) }
@@ -95,3 +92,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 })
+
+// ОТЗЫВЫ
+
+let noReview = document.querySelector(".no_reviews")
+let reviews = document.querySelector(".reviews")
+
+if (reviews < 1) {
+  noReview.classList.remove('hidden')
+}
+
+
+//  ЛАЙТБОКС
+
+
+
+// МЕНЮ
+
+document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector(".burger_icon");
+  const nav_burger_wrapper = document.querySelector(".nav_burger_wrapper");
+
+
+  burger.addEventListener('click', () => 
+    nav_burger_wrapper.classList.toggle("showMenu")
+);
+
+
+
+  const mobileMenu = document.querySelectorAll('.nav_burger a');
+  mobileMenu.forEach(link => {
+      link.addEventListener('click', () => {
+        nav_burger_wrapper.classList.remove("showMenu")
+      })
+  })
+
+});

@@ -79,13 +79,13 @@ export default {
 </script>
 
 <template>
-    <div class="form_wrapper">
+    <div class="form_wrapper animate__animated animate__fadeIn animate__slow">
         <div class="booking_wrapper">
             <Datepicker lang="ru" placeholder="Заезд" />
             <Datepicker class="margin_left20" lang="ru" placeholder="Выезд" />
             <div @click="toggleGuestsOpened" class="people margin_left20" type="text" placeholder="">
                 <p class="people_text">Количество гостей: {{ totalGuests }}</p>
-                <img class="people_img" :class="guestsOpened ? 'rotated' : ''" src="/public/chevron-down.svg" alt="">
+                <img class="people_img" :class="guestsOpened ? 'rotated' : ''" src="/images/chevron-down.svg" alt="">
             </div>
             <button @click="toggleCalcOpened" class="calculate_btn margin_left20">Рассчитать стоимость*</button>
         </div>
@@ -93,9 +93,9 @@ export default {
             <div class="adults_wrapper">
                 <p class="people_text">Взрослые</p>
                 <div class="adults_counter">
-                    <img @click="addAdult" class="add" src="/public/add.svg" alt="">
+                    <img @click="addAdult" class="add" src="/images/add.svg" alt="">
                     <p class="adults_count">{{ adultsCount }}</p>
-                    <img @click="removeAdult" class="remove" src="/public/remove.svg" alt="">
+                    <img @click="removeAdult" class="remove" src="/images/remove.svg" alt="">
                 </div>
             </div>
             <div class="kids_wrapper">
@@ -104,11 +104,11 @@ export default {
                 </div>
                 <div class="kid" v-for="( age, index) in totalKids">
                     <p class="people_text">Добавлен ребенок:&nbsp; {{ age }} {{ calculateAgeSuffix(age) }} </p>
-                    <img @click="removeKid(index)" src="/public/close.svg" alt="">
+                    <img @click="removeKid(index)" src="/images/close.svg" alt="">
                 </div>
                 <div class="add_kid">
                     <p class="people_text">Добавить ребенка</p>
-                    <img class=" add margin_left20" src="/public/add.svg" alt="">
+                    <img class=" add margin_left20" src="/images/add.svg" alt="">
                 </div>
                 <select @change="addKid" class="kids_age" name="" id="" ref="kids_selector">
                     <option value="-1" disabled="">Возраст ребёнка</option>
@@ -138,7 +138,7 @@ export default {
     </div>
     <div v-show="calcOpened" class="result_wrapper">
         <div class="close">
-            <img @click="toggleCalcOpened" class="close_icon" src="/public/close.svg" alt="">
+            <img @click="toggleCalcOpened" class="close_icon" src="/images/close.svg" alt="">
         </div>
         <p class="result_text">Ориентировочная стоимость составляет:</p>
         <div class="result_item">
@@ -349,4 +349,17 @@ export default {
     right: 0px;
     width: 32px;
 }
+@media (max-width: 1199px) {
+
+    .form_wrapper {
+        height: 320px;
+        width: 680px;
+    }
+    .booking_wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    } 
+}
+
 </style>
