@@ -28,19 +28,19 @@
       <a href="#location">Расположение</a>
       <a href="#reviews">Отзывы</a>
     </div>
-    <div>
+    <div class="close_div">
       <img class="closeicon" src="public/images/close.svg" alt="">
     </div>
   </div>
-  <header class="header_under1200">
+  <header class="header_under1200 animate__animated animate__fadeIn animate__slow">
     <div class="contacts">
-      <a href="tel:+79183880505">8 (918) 388-05-05</a>
+      <a href="tel:+79183880505"><p>+7(918)3880505</p></a>
       <a href=""><img src="/public/images/telegram.svg" alt=""></a>
       <a href=""><img src="/public/images/whatsapp.svg" alt=""></a>
       <a href=""><img src="/public/images/vk.svg" alt=""></a>
     </div>
     <a href="#application">
-      <button class="book_btn">Забронировать</button>
+      <button class="book_btn">Бронировать</button>
     </a>
     <img class="burger_icon" src="public/images/menu-duo-lg-svgrepo-com.svg" alt="">
     </div>
@@ -81,7 +81,7 @@
         <div class="card_info_wrapper animate__animated animate__fadeIn animate__slow">
           <div class="card_info_header">
             <img src="/public/images/kid.svg" alt="">
-            <h4 class="padding_left_10">Рекомендовано детям</h4>
+            <h4 class="padding_left_10">Для семейного отдыха</h4>
           </div>
           <p class="card_description">В отеле есть детская площадка, кухня для самостоятельного приготовления пищи, -
             это очень удобно для семей с детьми</p>
@@ -92,7 +92,7 @@
     </div>
   </section>
   <section id="about">
-    <div class="content_wrapper">
+    <div class="content_wrapper hotel_description">
       <h2>Отель «Вачиан» - описание</h2>
       <p class="padding_bottom_20">Гостевой дом "Вачиан" расположен в поселке Витязево в 1000 метрах от моря и песчаного
         пляжа. Просторные и
@@ -145,7 +145,7 @@
       </div>
   </section>
   <section id="food">
-    <div class="content_wrapper">
+    <div class="content_wrapper padding_top_20">
       <div class="food_wrapper">
         <div class="food_img"></div>
         <div class="food_text">
@@ -159,13 +159,12 @@
     </div>
   </section>
   <section id="rooms">
-    <div class="content_wrapper pb_130px">
+    <div class="content_wrapper pb_130px ">
       <h2>Номерной фонд отеля</h2>
-      <div class="room_item">
         <div class="room_item_wrapper">
           <div class="room_wrapper">
             <div class="room_gallery">
-              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+              <div style="--swiper-navigation-color: #ffffff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="/public/images/2.jpeg" />
@@ -185,6 +184,7 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
 
               <div thumbsSlider="" class="swiper mySwiper">
@@ -206,6 +206,7 @@
                   </div>
                 </div>
               </div>
+              
             </div>
 
             <div class="room_text_wrapper">
@@ -301,9 +302,7 @@
               </tr>
             </table>
           </div>
-        </div>
       </div>
-      <div class="room_item">
         <div class="room_item_wrapper">
           <div class="room_wrapper">
             <div class="room_gallery">
@@ -327,6 +326,7 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
 
               <div thumbsSlider="" class="swiper mySwiper">
@@ -469,8 +469,6 @@
             </table>
           </div>
         </div>
-
-      </div>
     </div>
   </section>
   <section class="prices">
@@ -511,8 +509,6 @@
     </div>
   </section>
   <section id="services">
-    <img class="top_bg_img" src="images/Clusiacae.svg" alt="">
-    <img class="bottom_bg_img" src="images/orange.svg" alt="">
     <div class="content_wrapper">
       <h2>Услуги отеля</h2>
       <div class="services_wrapper">
@@ -584,6 +580,8 @@
         </div>
       </div>
     </div>
+    <img class="top_bg_img" src="images/Clusiacae.svg" alt="">
+    <img class="bottom_bg_img" src="images/orange.svg" alt="">
     </div>
 
   </section>
@@ -596,7 +594,7 @@
       <p class="spo_coution">Скидки и Акции не сумируются</p>
       <div class="spo_cards_wrapper">
         <div class="spo_card">
-          <img src="/public/images/woman.jpg" alt="">
+          <img src="/public/images/woman.png" alt="">
           <p>Постоянным клиентам скидка 10%</p>
         </div>
         <div class="spo_card">
@@ -620,9 +618,11 @@
           </div>
           <div class="write_us">
             <p>Напишите нам</p>
-            <a class="padding_left_10"><img src="/public/images/telegram.svg" alt=""></a>
-            <a class="padding_left_10" href=""><img src="/public/images/whatsapp.svg" alt=""></a>
-            <a class="padding_left_10" href=""><img src="/public/images/vk.svg" alt=""></a>
+            <div class="social_icons">
+              <a class="padding_left_10"><img src="/public/images/telegram.svg" alt=""></a>
+              <a class="padding_left_10" href=""><img src="/public/images/whatsapp.svg" alt=""></a>
+              <a class="padding_left_10" href=""><img src="/public/images/vk.svg" alt=""></a>
+            </div>            
           </div>
         </div>
         <div class="places_card">
@@ -722,7 +722,6 @@
   <section class="steps">
     <div class="content_wrapper steps_container">
       <h2>Как происходит бронирование через сайт kokotrip.ru</h2>
-
       <div class="steps_wrapper">
         <div class="step">
           <img class="img_step" src="/public/images/1.svg" alt="">
@@ -775,12 +774,12 @@
         <p class="form_subheader">Остались вопросы? Хотите узнать о наличии свободных апартаментов и их стоимость?
           Напишите администратору</p>
         <form class="form_application" action="">
-          <input type="text" id="field1" placeholder="Ваше имя">
-          <input type="text" id="field2" placeholder="Даты проживания">
-          <input type="tel" id="field3" placeholder="Телефон">
-          <input type="email" id="field3" placeholder="Почта">
+          <input type="text" id="name" placeholder="Ваше имя">
+          <input type="text" id="period" placeholder="Даты проживания">
+          <input type="tel" id="phone" placeholder="Телефон">
+          <input type="email" id="email" placeholder="Почта">
           <textarea id="multiline-text" rows="3" cols="50" placeholder="">Ваш вопрос</textarea>
-          <p class="form_notice">Отправляя заявку, я даю согласие на обработку персональных данных</p>
+          <p class="form_notice footer_notice">Отправляя заявку, я даю согласие на обработку персональных данных</p>
           <button class="book_btn" type="submit">Отправить</button>
         </form>
       </div>

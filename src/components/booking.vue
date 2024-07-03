@@ -104,7 +104,7 @@ export default {
                 </div>
                 <div class="kid" v-for="( age, index) in totalKids">
                     <p class="people_text">Добавлен ребенок:&nbsp; {{ age }} {{ calculateAgeSuffix(age) }} </p>
-                    <img @click="removeKid(index)" src="/images/close.svg" alt="">
+                    <img @click="removeKid(index)" src="/images/close_black.svg" alt="">
                 </div>
                 <div class="add_kid">
                     <p class="people_text">Добавить ребенка</p>
@@ -138,7 +138,7 @@ export default {
     </div>
     <div v-show="calcOpened" class="result_wrapper">
         <div class="close">
-            <img @click="toggleCalcOpened" class="close_icon" src="/images/close.svg" alt="">
+            <img @click="toggleCalcOpened" class="close_icon" src="/images/close_black.svg" alt="">
         </div>
         <p class="result_text">Ориентировочная стоимость составляет:</p>
         <div class="result_item">
@@ -309,7 +309,7 @@ export default {
     position: absolute;
     bottom: 30%;
     left: 25%;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
 
 }
 
@@ -349,17 +349,61 @@ export default {
     right: 0px;
     width: 32px;
 }
-@media (max-width: 1199px) {
+
+@media (max-width: 1080px) {
 
     .form_wrapper {
-        height: 320px;
-        width: 680px;
+        height: 400px;
+        padding: 20px;
+        margin-top: 20px;
     }
-    .booking_wrapper{
+
+    .booking_wrapper {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-    } 
+    }
+
+    .margin_left20 {
+        margin-left: 0;
+    }
+
+    .people,
+    .calculate_btn {
+        width: 220px;
+    }
+
+    .select_wrapper {
+        left: 68px;
+        top: 210px;
+
+    }
 }
 
+@media (max-width: 480px) {
+    .form_wrapper {
+        height: 360px;
+        margin: 0;
+    }
+
+    .select_wrapper {
+        left: 0;
+        width: 100%;
+    }
+
+    .result_wrapper {
+        width: 90%;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+
+    }
+    .room_name,
+    .result_text,
+    .price {
+    font-size: 14px;
+    width: 95%;
+}
+}
 </style>

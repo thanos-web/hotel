@@ -21,6 +21,8 @@ import Swiper from 'swiper';
 import { Navigation, Pagination, Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import 'swiper/css/pagination';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -33,21 +35,42 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 3,
       freeMode: true,
       watchSlidesProgress: true,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 320px
+        480: {
+          slidesPerView: 3,
+        },
+        640: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+
+      },   
 
     });
 
-    let swiper = new Swiper(big, {
-      spaceBetween: 10,
-      modules: [Navigation, Pagination, Thumbs],
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper_thumbs,
-      },
-    });
-  })
+  let swiper = new Swiper(big, {
+    spaceBetween: 10,
+    modules: [Navigation, Pagination, Thumbs],
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper_thumbs,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },  
+  });
+})
 
 })
 
@@ -112,19 +135,19 @@ if (reviews < 1) {
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector(".burger_icon");
   const nav_burger_wrapper = document.querySelector(".nav_burger_wrapper");
+  const closeIcon = document.querySelector(".closeicon");
 
-
-  burger.addEventListener('click', () => 
+  burger.addEventListener('click', () =>
     nav_burger_wrapper.classList.toggle("showMenu")
-);
+  );
 
-
+  closeIcon.addEventListener('click', () => nav_burger_wrapper.classList.remove("showMenu"));
 
   const mobileMenu = document.querySelectorAll('.nav_burger a');
   mobileMenu.forEach(link => {
-      link.addEventListener('click', () => {
-        nav_burger_wrapper.classList.remove("showMenu")
-      })
+    link.addEventListener('click', () => {
+      nav_burger_wrapper.classList.remove("showMenu")
+    })
   })
 
 });
