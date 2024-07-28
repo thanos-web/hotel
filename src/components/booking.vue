@@ -316,6 +316,7 @@ export default {
 .result_item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .room_name,
@@ -400,10 +401,15 @@ export default {
 
     }
     .room_name,
-    .result_text,
-    .price {
+    .result_text {
     font-size: 14px;
-    width: 95%;
+    width: 75%;
+   
 }
 }
+@media (orientation: landscape){
+
+
+}
+
 </style>

@@ -594,6 +594,7 @@
 
     .room_text_wrapper {
         padding-bottom: 20px;
+        padding-top: 4px;
     }
 
     .img_step {
@@ -603,6 +604,16 @@
     .connection-line {
         top: 20px;
         left: 24px;
+    }
+
+    .swiper-thumbs {
+        display: none!important;
+    }
+
+    .mobile_book_btn {
+        height: 48px;
+        width: 100%;
+        font-size: 16px;
     }
 
 }
